@@ -1,1 +1,1 @@
-# e-commerce API
+# e-commerce landing page
