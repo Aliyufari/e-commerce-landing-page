@@ -1,4 +1,3 @@
-import { CaretDown } from "@phosphor-icons/react"
 
 const TopHeader = () => {
   return (
@@ -8,7 +7,7 @@ const TopHeader = () => {
             Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! 
             <strong className="ml-4">Shop Now</strong>
         </p>
-        <select className="flex items-center gap-2 text-gray-50 text-sm">
+        <select className="flex items-center gap-2 text-gray-50 outline-0 text-sm">
           <option value="">English</option>
           <option value="">Hausa</option>
         </select>
