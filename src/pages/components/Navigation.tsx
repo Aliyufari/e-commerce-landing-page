@@ -14,7 +14,7 @@ const Navigation = () => {
             </ul>
 
             <section className="flex items-center gap-6">
-                <form className="hidden items-center bg-gray-200 px-3 py-2 rounded lg:flex">
+                <form className="hidden items-center gap-4 bg-gray-200 px-3 py-2 rounded lg:flex">
                     <input 
                         type="text" 
                         id="search" 
