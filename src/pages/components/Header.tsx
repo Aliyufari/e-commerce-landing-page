@@ -4,8 +4,8 @@ import TopHeader from "./TopHeader"
 const Header = () => {
   return (
     <header className="border-b border-gray-300">
-        <TopHeader />
-        <Navigation />
+      <TopHeader />
+      <Navigation />
     </header>
   )
 }

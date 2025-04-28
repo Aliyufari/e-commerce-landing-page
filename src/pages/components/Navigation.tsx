@@ -1,12 +1,12 @@
-import { Heart, List, MagnifyingGlass, ShoppingCart, User } from "@phosphor-icons/react"
+import { Heart, Menu, Search, ShoppingCart, User } from 'lucide-react';
 
 const Navigation = () => {
   return (
     <nav className="flex items-center justify-center">
-        <div className="w-[85vw] flex items-center justify-between pt-8 pb-4">
+        <div className="container flex items-center justify-between pt-8 pb-4">
             <h2 className="font-bold text-xl">Exclusive</h2>
 
-            <ul className="hidden items-center gap-10 md:flex">
+            <ul className="hidden items-center gap-10 md:flex text-3sm">
                 <li className="border-b border-gray-300">Home</li>
                 <li>Contact</li>
                 <li>About</li>
@@ -14,16 +14,16 @@ const Navigation = () => {
             </ul>
 
             <section className="flex items-center gap-6">
-                <form className="hidden items-center gap-4 bg-gray-200 px-3 py-2 rounded lg:flex">
+                <form className="hidden items-center bg-gray-200 px-3 py-2 rounded lg:flex">
                     <input 
                         type="text" 
                         id="search" 
-                        className="bg-inherit outline-none text-xs focus:bg-inherit" 
+                        className="bg-inherit outline-none text-sm focus:bg-inherit mr-3" 
                         placeholder="What are you looking for?" />
-                    <label htmlFor="search"><MagnifyingGlass size={22} /></label>
+                    <label htmlFor="search"><Search /></label>
                 </form>
                 
-                <Heart size={22} />
+                <Heart />
 
                 <span className="relative">
                     <ShoppingCart size={22} />
@@ -33,7 +33,7 @@ const Navigation = () => {
                 <span className="flex items-center justify-center w-7 h-7 rounded-full bg-[#DB4444]">
                     <User className="text-white" size={18} />
                 </span>
-                <List size={32} className="block md:hidden" />
+                <Menu className="block md:hidden" />
             </section>
         </div>
     </nav>
