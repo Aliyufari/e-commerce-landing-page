@@ -1,11 +1,16 @@
 import { ChevronRight } from 'lucide-react';
-import ImageSlider from "./ImageSlider/ImageSlider"
+import ImageSlider from "./ImageSlider"
 import image1 from "./../../assets/images/phone1.png"
 import image2 from "./../../assets/images/phone2.jpg"
-import image3 from "./../../assets/images/phone3.jpg"
-import image4 from "./../../assets/images/phone4.jpg"
+import image3 from "./../../assets/images/bag.jpeg"
+import image4 from "./../../assets/images/cap.jpeg"
+import image5 from "./../../assets/images/glasses.jpg"
+import image6 from "./../../assets/images/jacket.jpg"
+import image7 from "./../../assets/images/laptop.jpg"
+import image8 from "./../../assets/images/shirt.jpg"
+import image9 from "./../../assets/images/watch.png"
 
-const IMAGES = [image1, image2, image3, image4];
+const IMAGES = [image1, image2, image3, image4, image5, image6, image7, image8, image9];
 
 const Hero = () => {
   return (

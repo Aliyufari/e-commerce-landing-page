@@ -40,7 +40,7 @@ const ImageSlider = ({ imageUrls }: Props) => {
             {/* Left Arrow */}
             <button
                 onClick={showPreviousImage}
-                className="absolute top-0 bottom-0 left-0 p-4 hover:bg-black/20 focus-visible:bg-black/20 cursor-pointer transition-colors duration-100 group"
+                className="image-slider-btn absolute top-0 bottom-0 left-0 p-4 hover:bg-black/20 focus-visible:bg-black/20 cursor-pointer transition-colors duration-100 group"
             >
                 <ArrowBigLeft size={24} className="stroke-white fill-black group-hover:scale-125 group-focus-visible:scale-125 transition-transform duration-200 ease-in-out" />
             </button>
@@ -48,7 +48,7 @@ const ImageSlider = ({ imageUrls }: Props) => {
             {/* Right Arrow */}
             <button
                 onClick={showNextImage}
-                className="absolute top-0 bottom-0 right-0 p-4 hover:bg-black/20 focus-visible:bg-black/20 cursor-pointer transition-colors duration-100 group"
+                className="image-slider-btn absolute top-0 bottom-0 right-0 p-4 hover:bg-black/20 focus-visible:bg-black/20 cursor-pointer transition-colors duration-100 group"
             >
                 <ArrowBigRight size={24} className="stroke-white fill-black group-hover:scale-125 group-focus-visible:scale-125 transition-transform duration-200 ease-in-out" />
             </button>
@@ -59,10 +59,10 @@ const ImageSlider = ({ imageUrls }: Props) => {
                     <button
                         key={index}
                         onClick={() => setImageIndex(index)}
-                        className="w-4 h-4 flex items-center justify-center cursor-pointer transition-transform duration-100 hover:scale-120 focus-visible:scale-120 outline-none"
+                        className="w-3 h-3 flex items-center justify-center cursor-pointer transition-transform duration-100 hover:scale-120 focus-visible:scale-120 outline-none"
                     >
                         {index === imageIndex ? (
-                            <CircleDot className="stroke-white fill-black w-full h-full" />
+                            <CircleDot className="stroke-3 stroke-[#DB4444] fill-white w-full h-full" />
                         ) : (
                             <Circle className="stroke-white fill-black w-full h-full" />
                         )}

@@ -15,7 +15,12 @@ body {
     margin-right: auto;
 }
 
-.image-slider-btn > * {
-    stroke: white;
-    fill: black;
+/* Image Slider Arrows Squish Effect */
+.image-slider-btn:hover > *,
+.image-slider-btn:focus-visible > *{
+    animation: squish 200ms ease-in-out;
+}
+
+@keyframes squish {
+    50% { scale: 1.4 0.6; }
 }
