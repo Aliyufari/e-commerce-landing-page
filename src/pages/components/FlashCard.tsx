@@ -4,12 +4,12 @@ interface Props {
     name: string;
     imageUrl: string;
     price: number;
-    old_price: number;
+    oldPrice: number;
     discount: number;
     rating: number;
 }
 
-const FlashCard = ({ name, imageUrl, price, old_price, discount, rating } : Props) => {
+const FlashCard = ({ name, imageUrl, price, oldPrice, discount, rating } : Props) => {
   return (
     <div className="flex flex-col gap-3 w-70">
         <figure className="bg-gray-200  h-58 flex items-center justify-center relative px-7 py-10 rounded">
@@ -21,7 +21,7 @@ const FlashCard = ({ name, imageUrl, price, old_price, discount, rating } : Prop
             </span>
         </figure>
         <h3>{name}</h3>
-        <h3 className="text-[#DB4444]">${price} <span className="text-gray-600">${old_price}</span></h3>
+        <h3 className="text-[#DB4444]">${price} <del className="text-gray-600 line">${oldPrice}</del></h3>
         <div className="flex items-center gap-2">
             <p className="flex">
                 <Star className="fill-[#ffad33] stroke-[#ffad33] w-5 h-5" />

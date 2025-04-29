@@ -54,7 +54,7 @@ const FlashSales = () => {
                     <FlashCard 
                         name={image.name} 
                         price={image.price} 
-                        old_price={image.old_price} 
+                        oldPrice={image.old_price} 
                         imageUrl={image.imageUrl} 
                         discount={image.discount} 
                         rating={image.rating} 
