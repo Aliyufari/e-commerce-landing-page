@@ -21,7 +21,7 @@ const FlashCard = ({ name, imageUrl, price, oldPrice, discount, rating } : Props
             </span>
         </figure>
         <h3>{name}</h3>
-        <h3 className="text-[#DB4444]">${price} <del className="text-gray-600 line">${oldPrice}</del></h3>
+        <h3 className="flex gap-4 text-[#DB4444]">${price} <del className="text-gray-600 line">${oldPrice}</del></h3>
         <div className="flex items-center gap-2">
             <p className="flex">
                 <Star className="fill-[#ffad33] stroke-[#ffad33] w-5 h-5" />
